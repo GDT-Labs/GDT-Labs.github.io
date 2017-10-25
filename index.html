@@ -1,1 +1,54 @@
-"Hello GDT" 
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>A Pen by  Leonardo Prates</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <style>
+      #intro {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        display: none;
+      }
+      #main {
+        display: none;
+      }
+    </style>    
+  </head>
+  <body>
+    <img id="intro" src="https://www.gdt.com/wp-content/themes/gdt_2017/assets/images/logo.png" alt="">
+    <div id="main" class="container">
+      <div class="jumbotron">
+        <h1 class="text-center">
+        GDT GitHub Pages
+        </h1>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="text-center">
+          <a href="https://www.gdt.com" target="_blank">https://www.gdt.com</a>
+          </h3>
+        </div>
+        <div class="col-md-6">
+          <h3 class="text-center">
+          <a href="https://www.github.com/gdt-labs" target="_blank">https://www.github.com/gdt-labs</a>
+          </h3>
+        </div>
+      </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <script>
+      $('#intro').fadeIn(1500).fadeOut(1500, function() {
+        $('#main').fadeIn(1500);
+      });
+    </script>
+  </body>
+</html>
