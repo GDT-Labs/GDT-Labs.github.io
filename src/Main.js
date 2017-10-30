@@ -38,7 +38,7 @@ const Header = () => (
         </Accordion>
       </Col>
       <Col md={6} className="text-center">
-        <img className="rounded-circle" src="https://dummyimage.com/140x140/eba925/fff.png&amp;text=VRO%2FVRA" alt="VRO/VRA" width="140" height="140"/>
+        <img className="rounded-circle" src="https://dummyimage.com/140x140/eba925/fff.png&amp;text=%20VRO%2FVRA" alt="VRO/VRA" width="140" height="140"/>
         <PanelGroup>
           {projects["VRO_VRA"].map((p, i) => (
             <Panel key={i} header={p.title}>
