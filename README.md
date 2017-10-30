@@ -8,3 +8,5 @@
 `yarn test` Runs the test watcher in an interactive mode.
 
 `yarn build` Builds the app for production to the build folder.
+
+`yarn run deploy` Deploy production build.

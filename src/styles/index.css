@@ -8,6 +8,10 @@ body {
   margin-bottom: 60px;
 }
 
+h4[role="presentation"] > a[role="tab"] {
+  cursor: pointer;
+}
+
 .rounded-circle {
   border-radius: 50%;
   vertical-align: middle;
