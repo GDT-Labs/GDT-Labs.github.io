@@ -27,17 +27,7 @@ const Header = () => (
       </Col>
     </Row>
     <Row>
-      <Col md={6} className="text-center">
-        <img className="rounded-circle" src="https://dummyimage.com/140x140/eba925/fff.png&amp;text=Ansible" alt="Ansible" width="140" height="140"/>
-        <Accordion>
-          {projects["Ansible"].map((p, i) => (
-            <Panel header={p.title} key={i} eventKey={i}>
-              {p.description}
-            </Panel>
-          ))}
-        </Accordion>
-      </Col>
-      <Col md={6} className="text-center">
+      <Col md={6} mdPush={6} className="text-center">
         <img className="rounded-circle" src="https://dummyimage.com/140x140/eba925/fff.png&amp;text=%20VRO%2FVRA" alt="VRO/VRA" width="140" height="140"/>
         <PanelGroup>
           {projects["VRO_VRA"].map((p, i) => (
@@ -46,6 +36,16 @@ const Header = () => (
             </Panel>
           ))}
         </PanelGroup>
+      </Col>
+      <Col md={6} mdPull={6} className="text-center">
+        <img className="rounded-circle" src="https://dummyimage.com/140x140/eba925/fff.png&amp;text=Ansible" alt="Ansible" width="140" height="140"/>
+        <Accordion>
+          {projects["Ansible"].map((p, i) => (
+            <Panel header={p.title} key={i} eventKey={i}>
+              {p.description}
+            </Panel>
+          ))}
+        </Accordion>
       </Col>
     </Row>
   </Grid>
