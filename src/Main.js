@@ -19,7 +19,7 @@ const Header = () => (
         <img className="rounded-circle" src="https://dummyimage.com/140x140/eba925/fff.png&amp;text=Spark" alt="Spark" width="140" height="140"/>
         <Accordion>
           {projects["Spark"].map((p, i) => (
-            <Panel header={p.title} key={i} eventKey={i + 1}>
+            <Panel header={p.title} key={i} eventKey={i}>
               {p.description}
             </Panel>
           ))}
@@ -31,7 +31,7 @@ const Header = () => (
         <img className="rounded-circle" src="https://dummyimage.com/140x140/eba925/fff.png&amp;text=Ansible" alt="Ansible" width="140" height="140"/>
         <Accordion>
           {projects["Ansible"].map((p, i) => (
-            <Panel header={p.title} key={i} eventKey={i + 1}>
+            <Panel header={p.title} key={i} eventKey={i}>
               {p.description}
             </Panel>
           ))}
