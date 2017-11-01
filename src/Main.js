@@ -11,6 +11,8 @@ const Header = () => (
           {projects["IoT"].map((p, i) => (
             <Panel key={i} header={p.title}>
               {p.description}
+              <hr/>
+              <p><a href={p.link} className="btn btn-warning" target="_blank">View Demo</a></p>
             </Panel>
           ))}
         </PanelGroup>
