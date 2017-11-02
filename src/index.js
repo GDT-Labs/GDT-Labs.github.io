@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 // import { Router, Route, browserHistory } from 'react-router'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+// import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import '../node_modules/normalize.css/normalize.css';
 import '../node_modules/bootswatch/readable/bootstrap.min.css';
 import './styles/index.css';
@@ -15,17 +15,17 @@ const PrimaryLayout = () => (
   <div>
     {/*<Navigation/>*/}
     <Header/>
-    <main>
-      <Switch>
-        <Route path="/build" exact component={Main} />
-      </Switch>
-    </main>
+    {/*<Switch>
+      <Route path="/build" exact component={Main} />
+    </Switch>*/}
+    <Main/>
     <Footer/>
   </div>
 );
 
 render(
-  <BrowserRouter>
+  /*<BrowserRouter>*/
     <PrimaryLayout />
-  </BrowserRouter>, document.getElementById('root'));
+  /*</BrowserRouter>*/, document.getElementById('root'));
+
 registerServiceWorker();
