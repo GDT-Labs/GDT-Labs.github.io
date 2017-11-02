@@ -15,7 +15,7 @@ const Asdf = () => (<h1>ASDF</h1>);
 
 const PrimaryLayout = () => (
   <div>
-    <Navigation/>
+    {/*<Navigation/>*/}
     <Header/>
     <main>
       <Switch>
