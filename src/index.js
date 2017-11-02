@@ -17,7 +17,7 @@ const PrimaryLayout = () => (
     <Header/>
     <main>
       <Switch>
-        <Route path="/" exact component={Main} />
+        <Route path="/build" exact component={Main} />
       </Switch>
     </main>
     <Footer/>
