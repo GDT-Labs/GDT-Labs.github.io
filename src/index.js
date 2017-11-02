@@ -5,13 +5,11 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import '../node_modules/normalize.css/normalize.css';
 import '../node_modules/bootswatch/readable/bootstrap.min.css';
 import './styles/index.css';
-import Navigation from './components/Navigation';
+// import Navigation from './components/Navigation';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
 import registerServiceWorker from './registerServiceWorker';
-
-const Asdf = () => (<h1>ASDF</h1>);
 
 const PrimaryLayout = () => (
   <div>
@@ -20,7 +18,6 @@ const PrimaryLayout = () => (
     <main>
       <Switch>
         <Route path="/" exact component={Main} />
-        <Route path="/asdf" exact component={Asdf} />
       </Switch>
     </main>
     <Footer/>
