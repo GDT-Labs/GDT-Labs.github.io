@@ -12,6 +12,19 @@ h4[role="presentation"] > a[role="tab"] {
   cursor: pointer;
 }
 
+[role="tablist"] {
+  margin-bottom: 25px;
+}
+
+a[data-toggle="collapse"] {
+  color: #333;
+  /*text-decoration: dotted;*/
+}
+
+#main {
+  margin-bottom: 100px;
+}
+
 .rounded-circle {
   border-radius: 50%;
   vertical-align: middle;

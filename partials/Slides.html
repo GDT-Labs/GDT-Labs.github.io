@@ -1,0 +1,25 @@
+import React from 'react';
+import { Carousel, Grid } from 'react-bootstrap';
+import slides from '../slides.js';
+import Header from '../Header';
+
+const Slides = () => (
+  <div>
+    <Header title="Slides"/>
+    <Grid>
+      <Carousel indicators={true} controls={true} interval={null}>
+        {slides.map((s, i) => (
+          <Carousel.Item key={i}>
+            <img width="100%" alt="Slide_1" src={s.url} />
+            <Carousel.Caption>
+              <h3>{s.caption.label}</h3>
+              <p>{s.caption.description}</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        ))}
+      </Carousel>
+    </Grid>
+  </div>
+);
+
+export default Slides;
