@@ -4,6 +4,8 @@ $(document).ready(function() {
    /// Handle navigation
   /////////////////////////
 
+  // Start home age with hash for browser back and forward
+  window.location.hash = '#Home';
 
   // Load front page
   const mainHeader = '<img src="/assets/company-logos/gdt-logo.png" alt="GDT Logo"> Agile Operations';
@@ -32,4 +34,5 @@ $(document).ready(function() {
       $('#main').load(`/partials/home.html`);
     }
   });
+
 });
