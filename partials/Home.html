@@ -94,3 +94,51 @@
     </div>
   </div>
 </div>
+
+
+<div class="row" id="category-row-3">
+  <div class="col-md-6">
+      <div role="tablist" id="Presales-col">
+        <div class="text-center">
+          <img class="rounded-circle" src="../assets/category-logos/Presales.png" alt="Presales" width="140" height="140">
+        </div>
+        <div class="card">
+          <div class="card-header" role="tab">
+            <h5 class="mb-0 text-center" id="Presales-title">
+              Workflow for User On/Off-boarding
+            </h5>
+          </div>
+          <div class="card-body" id="Presales-body">
+            Demonstrates the ability to create new users linked to Microsoft AD and other systems through the use of vRealize Automation self-service portal driving vRealize Orchestration workflows.  The ability to also remove users from all systems via the same methodology closes the loop and provides a complete user management flow.
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="col-md-6">
+    <div role="tablist" id="External-col">
+      <div class="text-center">
+        <img class="rounded-circle" src="../assets/category-logos/External.png" alt="External" width="140" height="140">
+      </div>
+      <script>
+        projects[5].data.forEach((project, index) => {
+          $('#External-col').append(`
+            <div class="card">
+              <div class="card-header" role="tab" id="heading-External-${index}">
+                <h5 class="mb-0 text-center">
+                  <a data-toggle="collapse" href="#collapse-External-${index}" aria-expanded="false" aria-controls="collapse-External-${index}">
+                    ${project.title}
+                  </a>
+                </h5>
+              </div>
+              <div id="collapse-External-${index}" class="collapse" role="tabpanel" aria-labelledby="heading-External-${index}" data-parent="#accordion">
+                <div class="card-body">
+                  ${project.description}
+                </div>
+              </div>
+            </div>
+          `)
+        })
+      </script>
+    </div>
+  </div>
+</div>
